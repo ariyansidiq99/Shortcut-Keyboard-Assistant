@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShortcutKeyboard</title>
+    <link rel="stylesheet" href="shortcutKeyboard.css">
+</head>
+<body>
+    <h1>Keyboard Shortcuts Demo</h1>
+    <p>press <kbd>Ctrl+K</kbd> to open the command palette</p>
+    <div id="output">Actions will appear here...</div>
+    <div class="hint">Try: <kbd>Ctrl+K</kbd> to open | <kbd>Esc</kbd> to close</div>
+    <div class="palette-overlay" id="overlay">
+        <div class="palette">
+            <input type="text" class="palette_input" id="paletteInput" placeholder="Type a command..." autocomplete="off">
+            <ul class="palette_list" id="paletteList"></ul>
+        </div>
+    </div>
+    <script src="shortcutKeyboard.js"></script>
+</body>
+</html>
